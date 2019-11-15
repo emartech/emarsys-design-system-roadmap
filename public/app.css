@@ -106,6 +106,10 @@ main {
   max-width: 640px;
 }
 
+.hidden {
+  display: none;
+}
+
 h1 {
   font-size: 32px;
   font-weight: 700;
@@ -141,10 +145,6 @@ article {
   margin: 16px 0;
   padding: 24px 32px 24px 72px;
   position: relative;
-}
-
-article.hidden {
-  display: none;
 }
 
 article h2 {
