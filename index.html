@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+<h1>Platform Redesign Roadmap</h1>
+
+<p>
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting. Read Project Wiki (Internal)
+</p>
+
+<button type="button">
+  <svg viewBox="0 0 24 24">
+    <path d="M13.5,8H12V13L16.28,15.54L17,14.33L13.5,12.25V8M13,3A9,9 0 0,0 4,12H1L4.96,16.03L9,12H6A7,7 0 0,1 13,5A7,7 0 0,1 20,12A7,7 0 0,1 13,19C11.07,19 9.32,18.21 8.06,16.94L6.64,18.36C8.27,20 10.5,21 13,21A9,9 0 0,0 22,12A9,9 0 0,0 13,3" />
+  </svg>
+  Show Older Milestones
+</button>
+
+{% for post in site.posts %}
+  {% if post.categories contains "past" %}
+    <article class="done hidden">
+      <header>
+        <h2>{{ post.title }}</h2>
+        <h3>Shipped on {{ post.date | date: '%B %d, %Y' }}</h3>
+      </header>
+      <section>{{ post.content }}</section>
+    </article>
+  {% endif %}
+{% endfor %}
+
+{% for post in site.posts %}
+  {% if post.categories contains "current" %}
+    <article class="done current">
+      <header>
+        <h2>{{ post.title }}</h2>
+        <h3><span>Just finished 🎉</span> Shipped on {{ post.date | date: '%B %d, %Y' }}</h3>
+      </header>
+      <section>{{ post.content }}</section>
+    </article>
+  {% endif %}
+{% endfor %}
+
+{% for post in site.posts %}
+  {% if post.categories contains "next" %}
+    <article>
+      <header>
+        <h2>{{ post.title }}</h2>
+        <h3>Estimated to ship on {{ post.date | date: '%B %d, %Y' }}</h3>
+      </header>
+      <section>{{ post.content }}</section>
+    </article>
+  {% endif %}
+{% endfor %}
