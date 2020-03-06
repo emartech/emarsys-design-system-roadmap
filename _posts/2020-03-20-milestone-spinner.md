@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Delighters – Loading spinner
-category: [next]
+category: [current]
 time: Q1
 ---
 

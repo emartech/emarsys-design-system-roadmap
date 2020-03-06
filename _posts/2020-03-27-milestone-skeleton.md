@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Delighters – Skeleton States
-category: [next]
+category: [current]
 time: Q1
 ---
 
