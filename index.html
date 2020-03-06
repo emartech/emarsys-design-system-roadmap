@@ -5,7 +5,7 @@ layout: default
 <h1>Platform Redesign Roadmap</h1>
 
 <p>
-  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting. Read Project Wiki (Internal)
+  Lore Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting. Read Project Wiki (Internal)
 </p>
 
 <button type="button">
@@ -28,7 +28,7 @@ layout: default
 {% endfor %}
 
 {% for post in site.posts %}
-  {% if post.categories contains "current" %}
+  {% if post.categories contains "just finished" %}
     <article class="done current">
       <header>
         <h2>{{ post.title }}</h2>
@@ -40,11 +40,23 @@ layout: default
 {% endfor %}
 
 {% for post in site.posts %}
+  {% if post.categories contains "current" %}
+    <article>
+      <header>
+        <h2>{{ post.title }}</h2>
+        <h3>Shipped in {{ post.time }}</h3>
+      </header>
+      <section>{{ post.content }}</section>
+    </article>
+  {% endif %}
+{% endfor %}
+
+{% for post in site.posts %}
   {% if post.categories contains "next" %}
     <article>
       <header>
         <h2>{{ post.title }}</h2>
-        <h3>Estimated to ship on {{ post.date | date: '%B %d, %Y' }}</h3>
+        <!-- <h3>Estimated to ship on {{ post.date | date: '%B %d, %Y' }}</h3> -->
       </header>
       <section>{{ post.content }}</section>
     </article>

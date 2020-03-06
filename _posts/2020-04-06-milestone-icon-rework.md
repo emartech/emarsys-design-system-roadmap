@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Icon Rework - Q2
+title: Icon Rework
 category: [next]
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Motion Design - Q2
+title: Motion Design
 category: [next]
 ---
 

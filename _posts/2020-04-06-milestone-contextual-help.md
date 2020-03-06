@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Contextual Help - Q2
+title: Contextual Help
 category: [next]
 ---
 

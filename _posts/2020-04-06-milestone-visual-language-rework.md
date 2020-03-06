@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Visual Language Rework - Q2
+title: Visual Language Rework
 category: [next]
 ---
 
