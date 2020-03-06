@@ -132,6 +132,10 @@ button {
   width: 100%;
 }
 
+button:focus {
+  outline: none;
+}
+
 button svg {
   margin-right: 8px;
   height: 24px;
@@ -200,8 +204,12 @@ article.done:after {
   background-color: var(--done-color);
 }
 
-article.done.current:after {
+article.done.just-finished:after {
   background-color: var(--timeline-color);
+}
+
+article.done.just-finished.first-element:before {
+  height: 0;
 }
 
 article.done h2:before {

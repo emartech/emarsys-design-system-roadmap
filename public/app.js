@@ -1,6 +1,7 @@
 (function() {
   var oldMileStonesHidden = true;
   var hiddenElements = document.querySelectorAll('.hidden');
+  var justFinishedElement = document.querySelector('.just-finished');
 
   var setButtonLabel = function() {
     var element = document.querySelector('button span');
@@ -17,6 +18,7 @@
     [].forEach.call(hiddenElements, function(hiddenElement) {
       hiddenElement.classList.toggle('hidden');
     });
+    justFinishedElement.classList.toggle('first-element');
     oldMileStonesHidden = !oldMileStonesHidden;
     setButtonLabel();
   });
