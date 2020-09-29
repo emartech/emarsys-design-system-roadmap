@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Drag and Drop
-category: [current]
+category: [past]
 time: Q1
 ---
 

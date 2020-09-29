@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Notice
-category: [current]
+category: [past]
 time: Q1
 ---
 

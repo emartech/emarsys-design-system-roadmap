@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Date-Time picker
-category: [just finished]
+category: [past]
 ---
 
 Communication and Automation is all about timing — and with the redesigned Date-Time Picker component, we’re determined to help our customers pick the right time to send their message, however complex their needs might be.
